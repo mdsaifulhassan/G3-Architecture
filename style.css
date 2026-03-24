@@ -16,6 +16,10 @@
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /* dark-02 */
 .text-gray{
     color: #424242;
@@ -25,6 +29,10 @@
     color:#727272;
     font-size: 1rem;
     line-height: 26px;
+}
+/* orange color */
+.orange{
+    color:#FF900E;
 }
 .btn-primary{
     background-color: rgba(255, 144, 14, 1);
@@ -50,13 +58,14 @@
     gap:30px;
    
 }
+
 .nav-list{
     list-style: none;
 }
 .nav-link{
     text-decoration: none;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.3rem;
 }
 .nav-bar,.banner{
     max-width: 1440px;
@@ -71,12 +80,44 @@
 }
 .banner-content h2{
     font-weight: bold;
-    font-size: 5.4rem;
+    font-size: 4rem;
     color:#131313;
 }
 .banner-content p{
+    font-size: 1rem;
     margin-bottom: 32px;
 }
 .banner-img{
  width:100%;
+}
+/* main features */
+.features{
+    padding-top: 85px;
+}
+.features{
+    align-items: center;
+}
+.img-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+    margin-right: 76px;
+}
+.feature-content{
+    max-width: 537px;
+}
+.features-title{
+    font-size: 2.5rem;
+}
+#quick-list{
+    font-weight: 400;
+    color:#727272;
+}
+.feature-content p{
+    padding-bottom: 32px;
+}
+@media screen and (max-width:576px){
+    .nav-bar,.nav-menu {
+    flex-direction: column;
+}
 }
