@@ -167,6 +167,8 @@ main>section {
 .fact-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
+    margin-left:50px;
 }
 
 .fact {
@@ -209,10 +211,13 @@ main>section {
         flex-direction: column;
     }
 
-    .img-container {
+    .img-container,.fact-container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         margin-right: 10px;
+    }
+    .fact-container{
+        gap: 24px;
     }
 }
 
@@ -225,5 +230,9 @@ main>section {
 
     .features {
         flex-direction: column;
+    }
+    .fact-container{
+        gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
