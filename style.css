@@ -34,6 +34,7 @@ main{
 .orange{
     color:#FF900E;
 }
+/* Primary Button */
 .btn-primary{
     background-color: rgba(255, 144, 14, 1);
     color: rgba(255, 255, 255, 1);
@@ -45,6 +46,7 @@ main{
     padding: 20px 25px;
     cursor: pointer;
 }
+
 /* main styles */
 .nav-bar {
     justify-content: space-between;
@@ -116,8 +118,45 @@ main{
 .feature-content p{
     padding-bottom: 32px;
 }
+.more-features{
+    padding-top:130px;
+}
+.cards-content h2{
+    font-size:3rem;
+    font-weight: bold;
+}
+.cards-content h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+.card{
+    /* border: 1px solid red; */
+    box-shadow: #353333;
+    gap:20px;
+}
+.hide{
+    display:none !important;
+}
 @media screen and (max-width:576px){
-    .nav-bar,.nav-menu {
+    .nav-bar,
+    .nav-menu,
+    .features {
+    flex-direction: column;
+}
+.img-container{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-right: 10px;
+}
+}
+/* medium device */
+@media screen and (min-width: 576px) and (max-width:992px){
+.img-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.features{
     flex-direction: column;
 }
 }
