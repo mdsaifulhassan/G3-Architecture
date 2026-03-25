@@ -301,6 +301,10 @@ main>section {
     .cards-content {
         width: 100%;
     }
+    .btn-features{
+        margin-left: -10px;
+        margin-top: -80px;
+    }
 
     .exp-img img {
         width: 100%;
@@ -338,10 +342,19 @@ main>section {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .features {
+    .features,.more-features  {
         flex-direction: column;
     }
-
+    .exp-img img {
+        width: 100%;
+    }
+    .cards-content {
+        width: 100%;
+    }
+     .btn-features{
+        margin-left: 5px;
+        margin-top: -100px;
+    }
     .fact-container {
         gap: 24px;
         grid-template-columns: repeat(2, 1fr);
