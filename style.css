@@ -222,10 +222,12 @@ main>section {
     background-color: #FFF4E7;
     margin-bottom: 216px;
     height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
 }
 .footer p{
-    text-align: center;
-    align-items: center;
+   font-size: 1.3rem;
 }
 .hide {
     display: none !important;
@@ -252,7 +254,18 @@ main>section {
 .sponsores {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 30px;
+}
+.img-sponsors{
+    width:80%;
+}
+.footer{
+    height: 50px;
+    text-align: center;
+}
+.footer p{
+   font-size: 0.8rem;
+
 }
 }
 
