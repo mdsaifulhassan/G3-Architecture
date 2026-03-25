@@ -152,21 +152,47 @@ main>section {
 .more-features {
     padding-top: 130px;
 }
+
+.btn-features {
+    background-color: rgba(255, 144, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 8px;
+    max-width: 342px;
+    padding: 46px 42px;
+    margin-left: -91px;
+    margin-top: -123px;
+
+}
+
+#ten-years {
+    font-size: 4.1rem;
+    font-weight: bold;
+}
+
+#exp {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
 /* cards related style */
-.cards-content{
+.cards-content {
     max-width: 586px;
     margin-right: 146px;
 }
+
 .cards-content h2 {
     font-size: 3rem;
     font-weight: bold;
-    margin:0px;
+    margin: 0px;
 }
-#side-border{
+
+#side-border {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
-.card{
+
+.card {
     box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
     border-radius: 8px;
@@ -233,8 +259,9 @@ main>section {
     margin-top: 50px;
     gap: 155px;
 }
+
 /* footer styles */
-.footer{
+.footer {
     background-color: #FFF4E7;
     margin-bottom: 216px;
     height: 100px;
@@ -242,12 +269,15 @@ main>section {
     align-items: center;
     border-radius: 8px;
 }
-.footer p{
-   font-size: 1.3rem;
+
+.footer p {
+    font-size: 1.3rem;
 }
-.img-sponsors{
+
+.img-sponsors {
     filter: grayscale();
 }
+
 .hide {
     display: none !important;
 }
@@ -256,7 +286,8 @@ main>section {
 
     .nav-bar,
     .nav-menu,
-    .features {
+    .features,
+    .more-features {
         flex-direction: column;
     }
 
@@ -267,25 +298,37 @@ main>section {
         margin-right: 10px;
     }
 
+    .cards-content {
+        width: 100%;
+    }
+
+    .exp-img img {
+        width: 100%;
+    }
+
     .fact-container {
         gap: 24px;
     }
-.sponsores {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-.img-sponsors{
-    width:80%;
-}
-.footer{
-    height: 50px;
-    text-align: center;
-}
-.footer p{
-   font-size: 0.8rem;
 
-}
+    .sponsores {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .img-sponsors {
+        width: 80%;
+    }
+
+    .footer {
+        height: 50px;
+        text-align: center;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+
+    }
 }
 
 /* medium device */
@@ -303,10 +346,12 @@ main>section {
         gap: 24px;
         grid-template-columns: repeat(2, 1fr);
     }
-.sponsores {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    justify-items: center;
-}
+
+    .sponsores {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+
 }
